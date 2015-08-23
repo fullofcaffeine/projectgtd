@@ -1,0 +1,7 @@
+-cp src/haxe
+-D js-es5
+-lib jQueryExtern
+-lib tink_lang
+-lib js-kit
+-main App
+-js main.js
