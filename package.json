@@ -1,8 +1,5 @@
 {
   "name": "projectgtd",
-  "description": "Sandbox/Playground for Haxe js experiment",
-  "private": true,
-  "dependencies": {
-    "jquery": "~2.1.1"
-  }
+  "description": "projecgtd",
+  "main": "main.js"
 }

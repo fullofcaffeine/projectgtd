@@ -39,6 +39,11 @@ class App implements util.Async {
 
     app.on('ready', function() {
       var mainWindow = untyped __new__("BrowserWindow",{width: windowWidth, height: windowHeight});
+
+      var dirname = untyped __dirname;
+      // and load the index.html of the app.
+      mainWindow.loadUrl('file://$dirname/index.html');
+
       mainWindow.on('closed', function() {
         mainWindow = null;
       });

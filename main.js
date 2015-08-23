@@ -20,6 +20,8 @@ App.prototype = {
 		});
 		app.on("ready",function() {
 			var mainWindow = new BrowserWindow({ width : _g.windowWidth, height : _g.windowHeight});
+			var dirname = __dirname;
+			mainWindow.loadUrl("file://" + dirname + "/index.html");
 			mainWindow.on("closed",function() {
 				mainWindow = null;
 			});
